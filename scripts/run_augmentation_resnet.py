@@ -62,7 +62,7 @@ def main() -> int:
     wait_for_gpu()
     for index, config in enumerate(configs, start=1):
         command = [
-            sys.executable, "-m", "pathmnist_tissue.cli", "train",
+            sys.executable, "-m", "src.cli", "train",
             "--name", config["name"], "--model", config["model"],
             "--size", "128", "--epochs", "10", "--batch-size", "32",
             "--accumulation-steps", "4", "--augmentation", config["augmentation"],

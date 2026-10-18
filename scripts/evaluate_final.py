@@ -7,8 +7,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from mlflow.tracking import MlflowClient
-from pathmnist_tissue.cli import choose_device, test
-from pathmnist_tissue.tracking import log_test_to_mlflow
+from src.cli import choose_device, test
+from src.tracking import log_test_to_mlflow
 
 ROOT = Path(__file__).resolve().parents[1]
 

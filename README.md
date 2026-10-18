@@ -19,16 +19,16 @@ El modelo final, ResNet-18 con aumentos geométricos a 128×128, obtuvo **91,53 
 
 ## Estructura
 
-- `src/pathmnist_tissue/resnet.py`: transferencia con ResNet-18 preentrenada y ajuste de su último bloque
-- `src/pathmnist_tissue/checkpointing.py`: ahorro de memoria con conservación de estadísticas de BatchNorm
-- `src/pathmnist_tissue/compatibility.py`: compatibilidad de checkpoints y huellas de arquitectura
-- `src/pathmnist_tissue/model.py`: CNN base de tres bloques Conv–(BatchNorm opcional)–ReLU–MaxPool, global average pooling y salida de nueve clases.
-- `src/pathmnist_tissue/data.py`: PathMNIST y particiones oficiales.
-- `src/pathmnist_tissue/engine.py`: entrenamiento y validación.
-- `src/pathmnist_tissue/evaluation.py`: métricas por clase, matrices de confusión y predicciones de validación y test.
-- `src/pathmnist_tissue/features.py`: activaciones intermedias de los tres bloques.
-- `src/pathmnist_tissue/tracking.py`: registro opcional en MLflow.
-- `src/pathmnist_tissue/cli.py`: comandos y registro de corridas.
+- `src/resnet.py`: transferencia con ResNet-18 preentrenada y ajuste de su último bloque
+- `src/checkpointing.py`: ahorro de memoria con conservación de estadísticas de BatchNorm
+- `src/compatibility.py`: compatibilidad de checkpoints y huellas de arquitectura
+- `src/model.py`: CNN base de tres bloques Conv–(BatchNorm opcional)–ReLU–MaxPool, global average pooling y salida de nueve clases.
+- `src/data.py`: PathMNIST y particiones oficiales.
+- `src/engine.py`: entrenamiento y validación.
+- `src/evaluation.py`: métricas por clase, matrices de confusión y predicciones de validación y test.
+- `src/features.py`: activaciones intermedias de los tres bloques.
+- `src/tracking.py`: registro opcional en MLflow.
+- `src/cli.py`: comandos y registro de corridas.
 - `notebooks/01_resultados.ipynb`: análisis y comparación de resultados.
 - `scripts/`: automatización de experimentos, evaluación final y exportación de evidencia
 - `tests/`: comprobaciones de gradientes, acumulación y checkpointing

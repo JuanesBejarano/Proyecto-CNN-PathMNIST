@@ -7,8 +7,8 @@ import torch
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
 
-from pathmnist_tissue.engine import run_epoch
-from pathmnist_tissue.model import SimpleCNN
+from src.engine import run_epoch
+from src.model import SimpleCNN
 
 
 class TrainingTests(unittest.TestCase):

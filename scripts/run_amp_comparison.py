@@ -43,7 +43,7 @@ def main():
                 continue
             progress.write_text(json.dumps(dict(status='running', completed=completed,
                                                 total=6, seed=seed, amp=amp, name=name), indent=2))
-            command = [sys.executable, '-m', 'pathmnist_tissue.cli', 'train',
+            command = [sys.executable, '-m', 'src.cli', 'train',
                        '--name', name, '--study', 'amp_comparison', '--model', 'simplecnn',
                        '--size', '128', '--normalization', 'batch', '--adaptive-pool',
                        '--batch-size', '32', '--accumulation-steps', '4',

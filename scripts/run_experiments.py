@@ -92,11 +92,11 @@ def main() -> None:
                     # Verificamos que el ID existe en el servidor que usa esta cola
                     client.get_run(config["mlflow_run_id"])
                 else:
-                    subprocess.run([sys.executable, "-m", "pathmnist_tissue.cli", "sync-mlflow",
+                    subprocess.run([sys.executable, "-m", "src.cli", "sync-mlflow",
                                     str(existing), "--mlflow-uri", args.mlflow_uri], cwd=ROOT, check=True)
                 row.update(status="reused", run_dir=str(existing))
             else:
-                command = [sys.executable, "-u", "-m", "pathmnist_tissue.cli", "train",
+                command = [sys.executable, "-u", "-m", "src.cli", "train",
                            "--name", name, "--device", "cuda", "--num-workers", "2",
                            "--mlflow-uri", args.mlflow_uri]
                 for key, value in settings.items():

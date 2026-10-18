@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-pathmnist-train = "pathmnist_tissue.cli:main"
+pathmnist-train = "src.cli:main"
 
 [dependency-groups]
 notebook = ["ipykernel>=6.29,<8", "matplotlib>=3.9,<4", "pandas>=2.2,<3"]
@@ -21,3 +21,7 @@ notebook = ["ipykernel>=6.29,<8", "matplotlib>=3.9,<4", "pandas>=2.2,<3"]
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "src"
+module-root = ""
