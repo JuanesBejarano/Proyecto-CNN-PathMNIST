@@ -1,0 +1,10 @@
+true/pred,adipose,background,debris,lymphocytes,mucus,smooth_muscle,normal_colon,stroma,tumor_epithelium
+adipose,1032,8,1,0,0,0,0,0,0
+background,5,1046,6,0,0,0,0,0,0
+debris,2,2,1133,1,0,8,0,5,1
+lymphocytes,0,0,11,1138,0,0,2,1,4
+mucus,115,12,136,0,429,5,21,150,22
+smooth_muscle,16,3,138,0,0,1170,0,25,2
+normal_colon,5,0,31,14,0,1,750,22,54
+stroma,0,1,288,0,0,56,0,699,1
+tumor_epithelium,4,0,88,0,2,1,18,30,1289

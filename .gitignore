@@ -1,0 +1,31 @@
+# Entorno y cachés locales
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# Datos y checkpoints reproducibles; se conservan en el equipo
+/data/
+/runs/
+/mlartifacts/
+/mlruns/
+*.pt
+*.pth
+*.onnx
+
+# Bases de datos locales, incluidos archivos auxiliares de SQLite
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Credenciales y temporales
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

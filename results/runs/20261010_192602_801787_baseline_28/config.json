@@ -1,0 +1,16 @@
+{
+  "name": "baseline_28",
+  "size": 28,
+  "epochs": 10,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "seed": 42,
+  "num_workers": 2,
+  "device": "cuda",
+  "architecture": "SimpleCNN-3blocks-GAP",
+  "model_sha256": "33b3da51455212e25fc98fa8e7bd2643289a4477c8612c44134c960037402195",
+  "data_dir": "data",
+  "mlflow_uri": "http://127.0.0.1:5000",
+  "mlflow_run_id": "e7b043fa31f842d998b41e8c397b97d2"
+}

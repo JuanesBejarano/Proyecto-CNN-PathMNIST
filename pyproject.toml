@@ -1,0 +1,23 @@
+[project]
+name = "pathmnist-tissue"
+version = "0.1.0"
+description = "Experimentos controlados con CNN sobre PathMNIST"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "medmnist>=3.0,<4",
+    "mlflow>=3.17.0",
+    "numpy>=2.0,<3",
+    "scikit-learn>=1.5,<2",
+    "torch>=2.5,<3",
+    "torchvision>=0.20,<1",
+]
+
+[project.scripts]
+pathmnist-train = "pathmnist_tissue.cli:main"
+
+[dependency-groups]
+notebook = ["ipykernel>=6.29,<8", "matplotlib>=3.9,<4", "pandas>=2.2,<3"]
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"

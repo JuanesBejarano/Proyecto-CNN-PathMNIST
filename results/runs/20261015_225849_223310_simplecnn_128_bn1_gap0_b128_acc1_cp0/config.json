@@ -1,0 +1,22 @@
+{
+  "name": "simplecnn_128_bn1_gap0_b128_acc1_cp0",
+  "size": 128,
+  "epochs": 10,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "seed": 42,
+  "num_workers": 2,
+  "device": "cuda",
+  "architecture": "SimpleCNN-3blocks-Flatten",
+  "batch_norm": true,
+  "adaptive_pool": false,
+  "accumulation_steps": 1,
+  "effective_batch_size": 128,
+  "gradient_checkpointing": false,
+  "model_sha256": "8bf6aeef3ab119899354c7ef410acd2e3928cbc0fae88b8d76b0edbe1ee670b1",
+  "model_code_sha256": "def8a78ffbe24cf42a4d90e9e2b951f473410c81d33a492c56a39f01ba0b3913",
+  "data_dir": "data",
+  "mlflow_uri": "http://127.0.0.1:5000",
+  "mlflow_run_id": "83232444d47c462fbf8feb10c9b5625e"
+}

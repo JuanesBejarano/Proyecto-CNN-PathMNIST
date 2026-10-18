@@ -1,0 +1,44 @@
+{
+  "index": 19,
+  "blocks": [
+    {
+      "block": "bloque_1",
+      "channels": [
+        27,
+        1,
+        5
+      ],
+      "shape": [
+        32,
+        28,
+        28
+      ]
+    },
+    {
+      "block": "bloque_2",
+      "channels": [
+        52,
+        13,
+        19
+      ],
+      "shape": [
+        64,
+        14,
+        14
+      ]
+    },
+    {
+      "block": "bloque_3",
+      "channels": [
+        2,
+        82,
+        81
+      ],
+      "shape": [
+        128,
+        7,
+        7
+      ]
+    }
+  ]
+}

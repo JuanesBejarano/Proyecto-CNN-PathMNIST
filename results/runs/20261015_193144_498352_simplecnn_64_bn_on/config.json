@@ -1,0 +1,17 @@
+{
+  "name": "simplecnn_64_bn_on",
+  "size": 64,
+  "epochs": 10,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "seed": 42,
+  "num_workers": 2,
+  "device": "cuda",
+  "architecture": "SimpleCNN-3blocks-GAP",
+  "batch_norm": true,
+  "model_sha256": "c343c55e126c1727318a5eda02f0a4ac6a3f6898a87c3eaa6d2003455f096dfd",
+  "data_dir": "data",
+  "mlflow_uri": "http://127.0.0.1:5000",
+  "mlflow_run_id": "e739bb625d93405c83fdef34b6463ec4"
+}
